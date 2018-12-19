@@ -1,0 +1,29 @@
+h1 {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+ 
+ul {
+    color: darkgreen
+}
+
+#changeableP {
+    border: 2px solid red;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.countries {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: orangered;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
