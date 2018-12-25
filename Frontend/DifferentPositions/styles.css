@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: sticky;
+    top:0;
+}
+
+#subscribeBox {
+    position:fixed;
+    bottom:0;
+    right:0;
+    border-style: solid;
+    margin: 1vw;
+    background-color: antiquewhite;
+    max-width: 15vw;
+}
+
+body {
+    background-color: pink;
+}
