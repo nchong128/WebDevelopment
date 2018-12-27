@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float:left;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+
+
+li a, .dropbtn {
+    padding: 14px 16px;
+    list-style-image: none;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover,  li:hover {
+    background-color: grey;
+}
+
+.active {
+    background-color: red;
+}
+
+
+.mainContent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+<ul>
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="world">World</a></li>
+    <li><a href="asia">Asia</a></li>
+    <li><a href="uk">UK</a></li>
+    <li><a href="business">Business</a></li>
+    <li class="dropdown">
+        <a class="dropbtn" href="#">Other</a>
+        <div class="dropdown-content">
+            <a href="#">New Zealand</a>
+            <a href="#">Australia</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </li>
+</ul>
+
+<div class="mainContent">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut lacinia ante, ut consequat mauris. Nam lobortis augue ac nisl interdum ultrices. Etiam dapibus risus eget dignissim varius. Vivamus lacinia suscipit augue, id semper diam pellentesque eget. Curabitur fringilla, dui ac dictum euismod, purus nunc molestie leo, et pellentesque risus orci vitae libero. Nam ornare sapien aliquet eros aliquam, scelerisque tristique neque aliquam. Nam venenatis eleifend porta. Nulla malesuada justo vel libero ullamcorper, et vulputate mauris accumsan. Sed pulvinar placerat luctus. Praesent a ultricies magna, a porttitor orci. Nunc hendrerit felis purus, sit amet scelerisque felis blandit sed. Maecenas sit amet commodo sem. Vestibulum non congue massa. Cras tincidunt dolor in diam vulputate, eu auctor leo viverra. Quisque lobortis eleifend lorem. Nullam placerat consequat libero quis tincidunt. </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum justo eget venenatis sagittis. Mauris convallis egestas augue, vitae aliquam elit imperdiet nec. Aenean gravida finibus egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam placerat bibendum ex, non ullamcorper nisl. Quisque lacinia nisi nec egestas iaculis. Aliquam cursus ullamcorper ipsum, nec congue neque viverra sit amet. Maecenas ornare dapibus posuere. Suspendisse congue dapibus ornare. Duis vel augue massa. Sed facilisis scelerisque mauris, non sodales orci placerat nec. Aliquam convallis tincidunt varius. Vestibulum quis ultricies mauris. Vestibulum tristique nisi elit, non pretium leo accumsan et.
+    </p>
+    <p>
+    Maecenas rhoncus dictum tristique. Maecenas eu ipsum at arcu sodales viverra vel sit amet ante. Mauris rutrum sed velit nec vehicula. Morbi convallis sem ut nisi rhoncus porttitor. Praesent non felis dignissim, euismod velit vitae, porttitor sapien. Sed eleifend, ligula at hendrerit consequat, erat massa auctor neque, eget luctus odio massa quis neque. Aliquam vitae neque vitae ipsum sagittis gravida. Nam tincidunt feugiat consectetur. Vestibulum ultricies elit iaculis dui accumsan, in ultricies leo vehicula. Nunc tempor bibendum eleifend. Pellentesque arcu velit, viverra ut pharetra ac, lobortis at felis. Nullam ut mauris odio. Nunc nulla libero, sodales ac lacus sed, lacinia sagittis libero. Donec tincidunt nibh sed interdum hendrerit. Suspendisse in suscipit ex, non lobortis nulla.
+    </p>
+    <p>
+    Morbi nec congue metus. Maecenas molestie massa quis leo congue, id pharetra lorem varius. Sed placerat quam vel massa varius, et rutrum est porta. Vestibulum non nisl mauris. Aliquam finibus nibh leo, eu rhoncus felis laoreet eu. Nullam consectetur at lectus at tempus. Nullam sit amet nisl venenatis, lacinia massa non, ullamcorper metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam nec ipsum rutrum, porta orci eu, scelerisque justo. Phasellus efficitur dolor a sollicitudin pellentesque. Suspendisse commodo ultricies turpis a fringilla. Praesent vitae odio nec magna maximus placerat. Etiam vitae risus eget leo lacinia scelerisque a ut ipsum. Nunc tristique risus odio, nec gravida orci finibus id.
+    </p>
+    <p>
+    Pellentesque fermentum vestibulum mauris, quis dictum eros rutrum ac. Maecenas ultrices magna imperdiet risus consectetur, eget eleifend arcu scelerisque. Duis mi mi, lobortis vel varius ullamcorper, sagittis ut nunc. Curabitur volutpat, ex sed tempus venenatis, arcu quam accumsan velit, blandit eleifend nulla diam id purus. Pellentesque non semper massa. In hac habitasse platea dictumst. Aliquam suscipit sodales lacus sed sagittis. Curabitur imperdiet risus id nulla sagittis porttitor a ut purus. Quisque pellentesque dolor pulvinar dignissim commodo. Curabitur sed congue metus, id malesuada nisl. Sed vel blandit libero, a dictum enim. In et sapien a mi aliquet volutpat ultrices a lectus.
+    </p>
+    <p>
+    Maecenas rhoncus dictum tristique. Maecenas eu ipsum at arcu sodales viverra vel sit amet ante. Mauris rutrum sed velit nec vehicula. Morbi convallis sem ut nisi rhoncus porttitor. Praesent non felis dignissim, euismod velit vitae, porttitor sapien. Sed eleifend, ligula at hendrerit consequat, erat massa auctor neque, eget luctus odio massa quis neque. Aliquam vitae neque vitae ipsum sagittis gravida. Nam tincidunt feugiat consectetur. Vestibulum ultricies elit iaculis dui accumsan, in ultricies leo vehicula. Nunc tempor bibendum eleifend. Pellentesque arcu velit, viverra ut pharetra ac, lobortis at felis. Nullam ut mauris odio. Nunc nulla libero, sodales ac lacus sed, lacinia sagittis libero. Donec tincidunt nibh sed interdum hendrerit. Suspendisse in suscipit ex, non lobortis nulla.
+    </p>
+    <p>
+    Morbi nec congue metus. Maecenas molestie massa quis leo congue, id pharetra lorem varius. Sed placerat quam vel massa varius, et rutrum est porta. Vestibulum non nisl mauris. Aliquam finibus nibh leo, eu rhoncus felis laoreet eu. Nullam consectetur at lectus at tempus. Nullam sit amet nisl venenatis, lacinia massa non, ullamcorper metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam nec ipsum rutrum, porta orci eu, scelerisque justo. Phasellus efficitur dolor a sollicitudin pellentesque. Suspendisse commodo ultricies turpis a fringilla. Praesent vitae odio nec magna maximus placerat. Etiam vitae risus eget leo lacinia scelerisque a ut ipsum. Nunc tristique risus odio, nec gravida orci finibus id.
+    </p>
+    <p>
+    Pellentesque fermentum vestibulum mauris, quis dictum eros rutrum ac. Maecenas ultrices magna imperdiet risus consectetur, eget eleifend arcu scelerisque. Duis mi mi, lobortis vel varius ullamcorper, sagittis ut nunc. Curabitur volutpat, ex sed tempus venenatis, arcu quam accumsan velit, blandit eleifend nulla diam id purus. Pellentesque non semper massa. In hac habitasse platea dictumst. Aliquam suscipit sodales lacus sed sagittis. Curabitur imperdiet risus id nulla sagittis porttitor a ut purus. Quisque pellentesque dolor pulvinar dignissim commodo. Curabitur sed congue metus, id malesuada nisl. Sed vel blandit libero, a dictum enim. In et sapien a mi aliquet volutpat ultrices a lectus.
+    </p>
+</div>
+
+</body>
+</html>
