@@ -1,0 +1,98 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Discography of Frank Ocean</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: whitesmoke;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 32px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create 4 equal columns that sit next to each other */
+        .column {
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 1100px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 800px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><i>The Discography of Frank Ocean</i></h1>    
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <img src="nostalgiaUltraImages/albumCover.jpg" style="width:100%">
+            <img src="nostalgiaUltraImages/nostalgiaUltraIDK.jpg" style="width:100%">
+            <img src="COimages/cdQ.jpg" style="width:100%">
+            <img src="COimages/coTV.jpg" style="width:100%">
+            <img src="blondeImages/blondeReceipt.jpg" style="width:100%">
+            <img src="blondeImages/frankGreen.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="nostalgiaUltraImages/frankMissing.jpg" style="width:100%">
+            <img src="nostalgiaUltraImages/nuFrame.jpg" style="width:100%">
+            <img src="COimages/frankBandana.jpg" style="width:100%">
+            <img src="COimages/superRichLyrics.jpg" style="width:100%">
+            <img src="blondeImages/frankTrayvon.jpg" style="width:100%">
+            <img src="blondeImages/frankTypewriter.jpg" style="width:100%">
+        </div>
+        
+        <div class="column">
+            <img src="nostalgiaUltraImages/nostalgiaTrio.jpg" style="width:100%">
+            <img src="nostalgiaUltraImages/swimGood.jpg" style="width:100%">
+            <img src="COimages/coTracklist.jpg" style="width:100%">
+            <img src="COimages/franksMoM.jpg" style="width:100%">
+            <img src="blondeImages/blondeArt.jpg" style="width:100%">
+            <img src="blondeImages/blondePoster.jpg" style="width:100%">
+            <img src="blondeImages/frankPaint.jpg" style="width:100%">
+
+        </div>
+        
+        
+    </div>    
+</body>
+</html>
