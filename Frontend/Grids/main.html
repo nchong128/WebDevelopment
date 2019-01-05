@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Learning Grids</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        counter-reset: section;
+    }
+
+    .grid-item::before {
+        counter-increment: section;
+        content: counter(section);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        background-color: dodgerblue;
+        padding: 10px;
+        grid-template-areas:
+            'header header header header'
+            'menu main main main'
+            'menu main main main'
+            'footer footer footer footer';
+        
+    }
+
+    .grid-item {
+        padding: 30px;
+        background-color: snow;
+        font-size: 30px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+    }
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-area: header;"></div>
+        <div class="grid-item" style="grid-area: menu;"></div>
+        <div class="grid-item" style="grid-area: main;"></div>
+        <div class="grid-item" style="grid-area: footer;"></div>
+
+        <!--
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        -->
+    </div>
+</body>
+</html>
