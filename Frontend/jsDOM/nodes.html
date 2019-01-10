@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>HTML DOM Nodes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #titleContainer {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+</style>
+</head>
+
+<body>
+    <h1 id="titleContainer">Hello World</h1>
+
+    <script>
+    function addText(text) {
+        /* MAKE A <DIV> -> <P> ELEMENT */
+        
+        // MAKE DIV
+        let myDiv = document.createElement("div");
+
+        // MAKE P ELEMENT WITH SOME TEXT ON IT
+        let myParagraph = document.createElement("p");
+        myParagraph.appendChild(document.createTextNode(text));
+
+        // MAKE P A CHILD OF DIV
+        myDiv.appendChild(myParagraph);
+
+        // ATTACH DIV TO BODY
+        document.body.appendChild(myDiv);
+    }
+
+    // Add onClickListener
+    document.getElementById("titleContainer").addEventListener("click",
+        function (){
+            addText("croc");
+        });
+
+        
+
+    </script>
+</body>
+</html>

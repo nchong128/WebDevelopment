@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML DOM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .button {
+        background-color: red;
+        border-color: black;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    .container {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+    }
+
+    .block {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+    }
+</style>
+</head>
+
+<body id="body">
+    <div style="text-align: center;">
+        <button onclick="moveDown('move')" class="button">Down</button>
+        <button onclick="moveDown('stop')" class="button">Stop</button>
+        <button onclick="moveUp('move')" class="button">Up</button>
+    </div>
+
+    <div class="container">
+        <div class="block"></div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid: Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header header header header header header header'
+                'menu menu main main main main main main main main main main'
+                'menu menu main main main main main main main main main main'
+                'menu menu main main main main main main main main main main'
+                'footer footer footer footer footer footer footer footer footer footer footer footer';
+            background-color: cornflowerblue;
+            margin: 0;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: darkred;
+            color: white;
+            padding: 30px;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: beige;
+            
+        }
+        
+        .main {
+            grid-area: main;
+            background-color: white;
+            padding: 200px;
+            
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: darkred;
+            color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        @media screen and (max-width:700px) {
+            .header, .footer {
+                background-color: aquamarine;
+                color: black;
+            }
+
+            .grid-container {
+                grid-template-areas: 
+                    'header'
+                    'menu'
+                    'main'
+                    'footer';
+            }
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            Header
+        </div>
+
+        <div class="menu">
+            Menu
+        </div>
+
+        <div class="main">
+            Main
+        </div>
+
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+
+</body>
+
+</html>

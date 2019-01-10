@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="container"></div>
+
+<script>
+function logResult(result) {
+  console.log(result);
+}
+
+function logError(error) {
+  console.log("Error: " + error);
+}
+
+function validateResponse(response) {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
+}
+
+function readResponseAsJson(response) {
+  return response.json();
+}
+
+function fetchJSON(pathToResource){
+  fetch(pathToResource)
+  .then(validateResponse)
+  .then(readResponseAsJson)
+  .then(logResult)
+  .catch(logError);
+}
+
+function readResponseAsBlob(response) {
+  return response.blob();
+}
+
+function showImage(responseAsBlob) {
+  let container = document.getElementById('container');
+  let imageElem = document.createElement("img");
+  container.appendChild(imageElem);
+  let imgUrl = URL.createObjectURL(responseAsBlob);
+  imageElem.src = imgUrl;
+}
+
+function fetchImage(pathToResource) {
+  fetch(pathToResource)
+  .then(validateResponse)
+  .then(readResponseAsBlob)
+  .then(showImage)
+  .catch(logError);
+}
+
+function readResponseAsText(response) {
+  return response.text();
+}
+
+function showText(responseAsText) {
+  let message = document.getElementById("container");
+  let text = document.createTextNode(responseAsText);
+  message.appendChild(text);
+
+}
+
+function fetchText(pathToResource) {
+  fetch(pathToResource)
+  .then(validateResponse)
+  .then(readResponseAsText)
+  .then(showText)
+  .catch(logError);
+}
+
+fetchText("croc.json");
+</script>
+
+</body>
+</html>
