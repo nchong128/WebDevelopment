@@ -1,0 +1,12 @@
+$container-color: white;
+
+// Set the flex container
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: $container-color;
+    margin: 0 auto;
+    width: 90%;
+}
+

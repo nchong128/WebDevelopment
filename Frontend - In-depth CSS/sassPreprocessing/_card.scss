@@ -1,0 +1,19 @@
+$card-color: #c0c0c0;
+$font-fam: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.card {
+    background-color: $card-color;
+    flex-basis: 70%;
+    height: 150px;
+    margin: 10px;
+}
+
+.header {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content {
+    font-family: $font-fam;
+    font-size: 11px;
+}
