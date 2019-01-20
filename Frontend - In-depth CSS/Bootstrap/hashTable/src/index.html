@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hash Tables: Hash Functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>    
+<!--Navbar that expands on large devices-->
+<nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+    <!--Button for the website name-->
+    <a class="navbar-brand" href="#">CS Hub</a>
+
+    <!--Toggler button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarNav" class="collapse navbar-collapse">
+        <div class="navbar-nav mt-2 mt-sm-0 mr-auto">
+            <a class="nav-link nav-item" href="#">Home</a>
+            <a class="nav-link nav-item" href="#">MIPS</a>
+            <a class="nav-link nav-item" href="#">Classes and Objects</a>
+            <a class="nav-link active nav-item" href="#">Hash Tables</a>
+        </div>
+
+        <div class="navbar-nav mt-sm-0">
+            <a class="nav-link nav-item" href="#">About Us</a>
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container-fluid">        
+    <!--Display and date-->
+    <div class="row">
+        <div class="col-sm-6 mr-auto">
+            <div class="display-4">Hash Tables</div>
+        </div>
+        <div class="col-sm-5 mt-sm-2 text-sm-right">
+            <h6>Friday, 28 September 2018</h6>
+        </div>
+    </div>
+
+    <!--Subtitle-->
+    <div class="row">
+        <div class="col-sm-8">
+            <p class="lead">
+                Learn about hash functions which allow the entire premise of hash tables to work!
+            </p>
+        </div>
+    </div>
+
+    <!--Text-->
+    <div class="row">
+        <div class="col"">
+            <h6><strong>Definition</strong></h6>
+            <p>A hash function is any function that can be used to map data of arbitrary size to data of a fixed size. </p>
+            <img class="img-fluid" src="assets/hash_tables.png" alt="Hash Table Diagram" style="width:400px; height: 300px;">
+            <br><br>
+
+            <h6><strong>A desirable hash function</strong></h6>
+            <ul class="list">
+                <li>Fast and still linear in the size of the key
+                    <ul class="list">
+                        <li>A slow one will degrade performance</li>
+                    </ul>
+                </li>
+                <li>Minimises <b>collisions</b> (two keys mapped to the same position)
+                    <ul class="list">
+                        <li>Don't use non-data or anything in our key that does not pose any useful information (e.g. no capital letters)</li>
+                        <li>Use all elements (or a reasonable subset - odd/even positions)</li>
+                        <li>Use the position of each element</li>
+                        <li>Avoid common factors</li>
+                    </ul>
+                </li>
+                <li>Deterministic (same value, same input)</li>
+                <li>Returns a value within the table range, so each value corresponds to an index in the table</li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

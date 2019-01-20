@@ -1,0 +1,35 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+
+@include media-breakpoint-up(sm) {
+    body {
+        background-color: color(blue);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        background-color: color(red);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        background-color: color(green);
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    body {
+        background-color: color(orange);
+    }
+}
