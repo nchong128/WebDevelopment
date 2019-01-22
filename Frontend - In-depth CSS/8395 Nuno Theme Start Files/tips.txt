@@ -1,0 +1,71 @@
+scrollspy on the body
+set comments for start and end of each html div
+started navbar with expanding and basic classes
+added navbar brand
+made navbar collapse toggler button
+made navbar links (did ml-auto to stick to the left)
+
+created landing page div section
+created caption div section with headers and button
+imported font from google fonts
+
+for body styling:
+	added overflox-x: hidden so that all the content stays in the window
+	set 'lato' as the font family
+	set text colour for everything
+
+for navbar styling:
+	set all text to upper case
+	changed font weight, font size, letter spacing (rem units)
+	changed background to be more transparent
+	USE !important to override previous changes
+
+Resize the logo to 2rem
+spaced out the list items using rem
+changed the links to white with a higher padding
+added a turqoise color for the white links when active OR hovered
+
+added background image to the home-inner div
+
+for caption:
+	gives a width and max-width 100% so that when the website sizes down, content won't go off the screen
+	position is absolute so the caption is placed at a certain position in the page
+	top:38% so that it stays 38% off the page
+	z-index 1 so that it always stays on top of the background image
+	text to white and uppercase
+
+applied styling of font-size, font-weight, letter-spacing, text-shadow and increased bottom padding to headers
+applied styling and spacing to button
+
+create a col-12 in the course section
+added header, paragraph and button
+
+added jumbotron > narrow > col-12 > (heading, heading underline) in the features section
+
+add row under narrow with 1 column that splits into 3 at md-size
+use font awesome to add an icon and make positional adjustments
+added text
+copied to have 3 different features (with different font awesome shrinks and up values)
+
+Started resources section
+add fixed background again
+
+finished remainder of HTML
+
+-------
+can set border radius to 50% to change square image to circle
+
+---- 
+1rem = 16px;
+0.5rem = 8px;
+0.05rem = 0.8px;
+
+
+
+
+
+
+
+
+
+
