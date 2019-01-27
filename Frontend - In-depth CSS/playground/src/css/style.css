@@ -1467,4 +1467,8 @@ body {
   background: #0070df;
 }
 
+.navbar-brand span {
+  letter-spacing: 0.15rem;
+}
+
 /*# sourceMappingURL=style.css.map */
