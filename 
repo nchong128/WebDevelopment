@@ -1,0 +1,91 @@
+[33mcommit 89c0dccc77d247f395de7c625b8e1f88283c9179[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Tue Jan 29 11:41:54 2019 +1100
+
+    Finished front end section
+
+[33mcommit a23997b3542e88041cbe4ac82c56900da35b9c5d[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Mon Jan 28 00:38:28 2019 +1100
+
+    Refactored CSS styles for TinDog
+
+[33mcommit ed52dc405a7b17b9120d7c6aaee38eb0f94ea376[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Wed Jan 23 02:21:29 2019 +1100
+
+    Finished Nuno Theme Start Files
+    Fixed window not being 100% in Post-It Malone
+
+[33mcommit 307ab781143c388591c28b91487609b78336bc13[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Sun Jan 20 22:45:40 2019 +1100
+
+    Worked on more Bootstrap
+
+[33mcommit 0a30bb1dd03cd47978448c3984558c897ba93be7[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Fri Jan 11 18:51:23 2019 +1100
+
+    Renamed everything, added some work from learning SASS
+
+[33mcommit 4157ceb7b091b54c4be95b743c5139df32f674d6[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Thu Jan 10 22:38:39 2019 +1100
+
+    Finished front end basics
+
+[33mcommit 0154a4ea9e9eb2392991dd5339e8e88631a97648[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Sat Jan 5 19:41:39 2019 +1100
+
+    Finished experimenting with flexboxes and grids
+
+[33mcommit 1ca5451315de5b1042c6a9836bf255a395c8ea64[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Fri Jan 4 13:05:00 2019 +1100
+
+    Finished Flexboxes, Gallery and WebLayout
+
+[33mcommit 20e2aa51058b9f43f11786deb36af70635cdd917[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Thu Dec 27 15:59:02 2018 +1100
+
+    Implemented dropdown button feature on the main page.
+
+[33mcommit 89309b85599e760501e977bd4806972ce1d39049[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Wed Dec 26 00:25:44 2018 +1100
+
+    Created more sample pages
+
+[33mcommit 15d7bd5f9ee577531ece1665c44bb3e52f7bc9e7[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Fri Dec 21 19:41:17 2018 +1100
+
+    Created form about filling in simple details
+
+[33mcommit 85318b1a8bc6c71eb337f426aa68b9f93fecbd14[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Thu Dec 20 22:58:42 2018 +1100
+
+    Created SimplePictures website, including all of its resource files
+
+[33mcommit 9d2e01c9795edb832ada143456bd683d1616c0e5[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Wed Dec 19 20:42:18 2018 +1100
+
+    Created a colours page exploring the different uses of colour in HTML
+    pages
+
+[33mcommit 85b6ba3132629b62905e8cce4ac9d6cb61446bb0[m
+Author: nchong128 <nchong128@gmail.com>
+Date:   Wed Dec 19 15:32:50 2018 +1100
+
+    Added initial files
+
+[33mcommit 679a97c7be73a0f0a63b7de3128e1d3a30846d7a[m
+Author: Nicholas Chong <nchong128@gmail.com>
+Date:   Wed Dec 19 13:09:19 2018 +1100
+
+    Initial commit
