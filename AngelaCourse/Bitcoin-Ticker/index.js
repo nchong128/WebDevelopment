@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const port = 6969;
-var request = require('request');
+let request = require('request');
 
 const app = express();
 
@@ -14,19 +14,30 @@ app.get("/", function(req, res) {
 app.post("/", (req,res) => {
     let cryptoCode = req.body.crypto;
     let fiatCode = req.body.fiat;
-    let websiteCode = cryptoCode + fiatCode;
-    let baseURL = 'https://apiv2.bitcoinaverage.com/indices/global/ticker/';
+    let amount = req.body.amount;
 
-    request(baseURL + websiteCode, function (error, response, body) {
-    let data = JSON.parse(body);
+    let options = {
+        url: 'https://apiv2.bitcoinaverage.com/convert/global',
+        method: "GET",
+        qs: {
+            from: cryptoCode,
+            to: fiatCode,
+            amount: amount
+        }
+    };
 
-    res.write("The current date is " + data.display_timestamp);
-    res.write("The price of "+  cryptoCode + " is " + data.last + " " + fiatCode);
+    request(options, (error, response, body) => {
+        let data = JSON.parse(body);
+        let price = data.price;
+        let currentDate = data.time;
 
-    res.send();
+        res.write("The current date is " + currentDate);
+        res.write("The price of "+  cryptoCode + " is " + price + " " + fiatCode);
+
+        res.send();
     });
 });
 
-app.listen(port, function() {
+app.listen(port, () => {
     console.log("Server is running on port " + port);
 });
